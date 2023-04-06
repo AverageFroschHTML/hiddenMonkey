@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            
+            .background {
+                background-image: url("https://images.unsplash.com/photo-1470058869958-2a77ade41c02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8anVuZ2xlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+
+            }
+            .hiddenMonkeyBUTTON {
+                color:rgb(245, 6, 6);
+                background-image: url("https://images.unsplash.com/photo-1470058869958-2a77ade41c02?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8anVuZ2xlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+                font-size:50px;
+                width: 600px;
+                height: 120px;
+                border-radius: 20px;
+                border: none;
+                font-weight: bold ;
+                position: relative;
+                right: 8px;
+                top: -9px;
+                
+            }
+
+            .hiddenMonkeyBUTTON:hover {
+                background-image: url("AFFFEEE.jpg");
+                
+            }
+            
+            .hidden {
+                display: none;
+                
+            }
+
+            .visible {
+                display: block;
+                position:relative;
+                top:-133px;
+                right:8px;
+            }
+            
+            .over {
+                z-index: 2;
+            }
+            
+            .under {
+                z-index: 1;
+            }
+            
+            .constantpic {
+                background-image: url("AFFFEEE.jpg");
+            }
+       
+            .AffeButtonConstant {
+                background-image: url("AFFFEEE.jpg");
+            }
+            
+            .Cursor {
+                cursor: pointer;
+            }
+       
+            .textStyle {
+                position: relative;
+    color: rgb(245, 6, 6);
+    font-weight: bold;
+    font-size: 100px;
+    right: 8px;
+    top: 98px;
+            }
+
+            .smolltextStyle {
+                position: relative;
+                color:rgb(245, 6, 6);
+                font-weight: bold ;
+                font-size:60px;
+                right: 8px;
+                top: -9px;
+            }
+       </style>
+
+
+
+
+
+
+        <script>
+            let alarm = new Audio ("tiktoksoundtrackGOOFYgta.mp3");
+            
+            function showImage(){
+                Affe.classList.replace("hidden" , "visible");
+                alarm.play();
+                AffeBUTTON.classList.add("AffeButtonConstant");
+                AffeBUTTON.classList.remove("Cursor")
+            }
+
+        </script>
+</head>
+<body class="background">
+    
+
+    <button class="hiddenMonkeyBUTTON over Cursor" id="AffeBUTTON" onclick="showImage()">
+
+    </button>
+
+    
+    <img src="AFFFEEE.jpg" class="hidden under" id="Affe">
+
+    <p class="textStyle">
+        Find the hidden Monkey!
+    </p>
+
+    <p class="smolltextStyle">
+        (Hover with your mouse all over the place to search monki)
+    </p>
+
+</body>
+</html>
